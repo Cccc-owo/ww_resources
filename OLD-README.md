@@ -7,7 +7,7 @@
 
 本仓库收集整理与 鸣潮/Wuthering Waves 相关的资源文件；
 
-以及为 **早柚核心GsCore**插件[WutheringWavesUID](https://github.com/tyql688/WutheringWavesUID) 和 [XutheringWavesUID](https://github.com/Loping151/XutheringWavesUID) 插件提供的第三方素材资源。
+以及为 **早柚核心GsCore**插件[WutheringWavesUID](https://github.com/tyql688/WutheringWavesUID) 插件提供的第三方素材资源。
 
 
 
@@ -15,8 +15,8 @@
 
 | 介绍                                                         | 文件夹           |
 | ------------------------------------------------------------ | ---------------- |
-| [XutheringWavesUID](https://github.com/Loping151/XutheringWavesUID) rs帮助/ww帮助 菜单顶图 | banner_bg        |
-| [XutheringWavesUID](https://github.com/Loping151/XutheringWavesUID)/ww角色面板图片 | custom_role_pile |
+| [WutheringWavesUID](https://github.com/tyql688/WutheringWavesUID) rs帮助/ww帮助 菜单顶图 | banner_bg        |
+| [WutheringWavesUID](https://github.com/tyql688/WutheringWavesUID)/ww角色面板图片 | custom_role_pile |
 
 
 
@@ -34,9 +34,9 @@
 >
 > 路径：/gsuid_core/gsuid_core/plugins/RoverSign/RoverSign/roversign_help/texture2d/banner_bg.jpg
 >
-> 路径：/gsuid_core/gsuid_core/plugins/XutheringWavesUID/XutheringWavesUID/wutheringwaves_help/texture2d/banner_bg.jpg
+> 路径：/gsuid_core/gsuid_core/plugins/WutheringWavesUID/WutheringWavesUID/wutheringwaves_help/texture2d/banner_bg.jpg
 
-将本项目下载后，挑选 ww_resources/banner_bg 里面一张喜欢的图片 ，重命名为 banner_bg.jpg复制到 /gsuid_core/gsuid_core/plugins/XutheringWavesUID/XutheringWavesUID/wutheringwaves_help/texture2d/banner_bg.jpg 替换原文件即可。
+将本项目下载后，挑选 ww_resources/banner_bg 里面一张喜欢的图片 ，重命名为 banner_bg.jpg复制到 /gsuid_core/gsuid_core/plugins/WutheringWavesUID/WutheringWavesUID/wutheringwaves_help/texture2d/banner_bg.jpg 替换原文件即可。
 
 #### 🖼参考图
 
@@ -51,10 +51,10 @@
 
 > [!NOTE]
 >
-> 路径 ：gsuid_core/data/XutheringWavesUID/custom_role_pile
+> 路径 ：gsuid_core/data/WutheringWavesUID/custom_role_pile
 >
 
-将本项目下载后，手动将ww_resources/custom_role_pile复制到 gsuid_core/data/XutheringWavesUID/custom_role_pile/ 目录下即可。
+将本项目下载后，手动将ww_resources/custom_role_pile复制到 gsuid_core/data/WutheringWavesUID/custom_role_pile/ 目录下即可。
 
 #### 🖼参考图
 
@@ -86,10 +86,10 @@ git clone https://github.com/anyliew/ww_resources /opt/picture/ww_resources/
 ```
 
 
-(3) 将源目录 /opt/picture/ww_resources/custom_role_pile/ 的内容同步到目标目录 /opt/gsuid_core/data/XutheringWavesUID/custom_role_pile/。
+(3) 将源目录 /opt/picture/ww_resources/custom_role_pile/ 的内容同步到目标目录 /opt/gsuid_core/data/WutheringWavesUID/custom_role_pile/。
 
 ```bash
-rsync -av --delete --progress /opt/picture/ww_resources/custom_role_pile/ /opt/gsuid_core/data/XutheringWavesUID/custom_role_pile/
+rsync -av --delete --progress /opt/picture/ww_resources/custom_role_pile/ /opt/gsuid_core/data/WutheringWavesUID/custom_role_pile/
 ```
 
 #### 1panel定时更新
@@ -98,7 +98,7 @@ rsync -av --delete --progress /opt/picture/ww_resources/custom_role_pile/ /opt/g
 
 ```bash
 cd /opt/picture/ww_resources/ && git pull
-rsync -av --delete --progress /opt/picture/ww_resources/custom_role_pile/ /opt/gsuid_core/data/XutheringWavesUID/custom_role_pile/
+rsync -av --delete --progress /opt/picture/ww_resources/custom_role_pile/ /opt/gsuid_core/data/WutheringWavesUID/custom_role_pile/
 ```
 ![1panel计划任务](./docs/1panel_scheduled_task.png)
 
@@ -106,10 +106,9 @@ rsync -av --delete --progress /opt/picture/ww_resources/custom_role_pile/ /opt/g
 #### 📝 游戏角色名称与id对应表
 
 > custom_role_pile
-> 参考 XutheringWavesUID/utils/map/detail_json/char‘
-  [XutheringWavesUID](https://github.com/Loping151/XutheringWavesUID)
- [hakush](https://api.hakush.in/ww/data/character.json)
+> 参考 WutheringWavesUID/utils/map/detail_json/char
 
+[对应表](./custom_role_pile/README.md)
 
 ## 📌 注意事项
 
