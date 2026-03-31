@@ -3,6 +3,8 @@
 </div>
 
 # ww_resources
+
+
 # 鸣潮资源库
 
 本仓库收集整理与 鸣潮/Wuthering Waves 相关的资源文件；
@@ -15,7 +17,7 @@
 
 | 介绍                                                         | 文件夹           |
 | ------------------------------------------------------------ | ---------------- |
-| [XutheringWavesUID](https://github.com/Loping151/XutheringWavesUID) rs帮助/ww帮助 菜单顶图 | banner_bg        |
+| [XutheringWavesUID](https://github.com/Loping151/XutheringWavesUID) rs帮助/ww帮助 帮助横幅背景图 | banner_bg        |
 | [XutheringWavesUID](https://github.com/Loping151/XutheringWavesUID)/ww角色面板图片 | custom_role_pile |
 
 
@@ -26,26 +28,36 @@
 
    - 参考插件文档配置资源路径
 
-     
 
-### 🖼 banner_bg  rs帮助/ww帮助菜单顶图
+
+### 🖼 banner_bg  XutheringWavesUID/帮助横幅背景图 
+
+	- GsCore网页控制台 
+选择 插件配置→插件选择→XutheringWavesUID→插件参数配置→鸣潮展示配置→帮助横幅背景图(建议1545x551)→上传图片→确认修改
+
+<img src="./docs/ww.webp">
+
+#### 🖼参考图
+<details><summary>🖼ww帮助</summary><p>
+<a><img src="./docs/ww_help.jpg"></a>
+</details>
+
+### 🖼 banner_bg  RoverSign/帮助横幅背景图
 
 > [!NOTE]
 >
-> 路径：/gsuid_core/gsuid_core/plugins/RoverSign/RoverSign/roversign_help/texture2d/banner_bg.jpg
+> 路径
 >
-> 路径：/gsuid_core/gsuid_core/plugins/XutheringWavesUID/XutheringWavesUID/wutheringwaves_help/texture2d/banner_bg.jpg
+> /gsuid_core/gsuid_core/plugins/RoverSign/RoverSign/roversign_help/texture2d/banner_bg.jpg
 
-将本项目下载后，挑选 ww_resources/banner_bg 里面一张喜欢的图片 ，重命名为 banner_bg.jpg复制到 /gsuid_core/gsuid_core/plugins/XutheringWavesUID/XutheringWavesUID/wutheringwaves_help/texture2d/banner_bg.jpg 替换原文件即可。
+将本项目下载后，挑选 ww_resources/banner_bg 里面一张喜欢的图片 ，重命名为 banner_bg.jpg复制到 /gsuid_core/gsuid_core/plugins/RoverSign/RoverSign/roversign_help/texture2d/banner_bg.jpg 替换原文件即可。
 
 #### 🖼参考图
 
 <details><summary>🖼rs帮助</summary><p>
 <a><img src="./docs/rs_help.jpg"></a>
 </details>
-<details><summary>🖼ww帮助</summary><p>
-<a><img src="./docs/ww_help.jpg"></a>
-</details>
+
 
 ### 🖼 custom_role_pile ww角色面板图片
 
@@ -62,15 +74,23 @@
 <a><img src="./docs/ww_panel.jpg"></a>
 </details>
 
-#### Debian Linux 使用教程
+
+### 🖼 帮助图标
+
+挑选 ww_resources/icon 里面一张喜欢的图片 
+
+	- GsCore网页控制台 
+选择 插件配置→插件选择→XutheringWavesUID→插件参数配置→鸣潮展示配置→帮助图标（建议256x256）→上传图片→确认修改
+
+<img src="./docs/icon_help.webp">
+
+## Debian Linux 使用 custom_role_pile 教程
 
 > [!NOTE]
 >
 > 我的WutheringWavesUID存放角色面板图片的路径是 "/opt/picture/ww_resources/custom_role_pile/ "
 >
 > 仅提供参考，需按照实际位置进行修改
-
-
 
 (1) 通过APT包管理器安装两个软件包`rsync` 和 `git`。
 
@@ -82,7 +102,7 @@ apt install -y rsync git
 (2) 将GitHub仓库 anyliew/ww_resources 克隆到本地目录 /opt/picture/ww_resources/ ;如果目标目录不存在，git会自动创建
 
 ```bash
-git clone https://github.com/anyliew/ww_resources /opt/picture/ww_resources/
+git clone --depth 1 https://github.com/anyliew/ww_resources /opt/picture/ww_resources/
 ```
 
 
@@ -92,7 +112,9 @@ git clone https://github.com/anyliew/ww_resources /opt/picture/ww_resources/
 rsync -av --delete --progress /opt/picture/ww_resources/custom_role_pile/ /opt/gsuid_core/data/XutheringWavesUID/custom_role_pile/
 ```
 
-#### 1panel定时更新
+
+
+## 1panel定时更新
 
 自动化脚本，用于定期更新
 
@@ -103,12 +125,12 @@ rsync -av --delete --progress /opt/picture/ww_resources/custom_role_pile/ /opt/g
 ![1panel计划任务](./docs/1panel_scheduled_task.png)
 
 
-#### 📝 游戏角色名称与id对应表
+## 📝 游戏角色名称与id对应表
 
 > custom_role_pile
 > 参考 XutheringWavesUID/utils/map/detail_json/char‘
   [XutheringWavesUID](https://github.com/Loping151/XutheringWavesUID)
- [hakush](https://api.hakush.in/ww/data/character.json)
+
 
 
 ## 📌 注意事项
