@@ -109,7 +109,7 @@ git clone --depth 1 https://github.com/anyliew/ww_resources /opt/picture/ww_reso
 (3) 将源目录 /opt/picture/ww_resources/custom_role_pile/ 的内容同步到目标目录 /opt/gsuid_core/data/XutheringWavesUID/custom_role_pile/。
 
 ```bash
-rsync -av --delete --progress /opt/picture/ww_resources/custom_role_pile/ /opt/gsuid_core/data/XutheringWavesUID/custom_role_pile/
+rsync -av --delete --progress ~/ww_resources/custom_role_pile/ ~/qq_bot/gsuid_core/data/XutheringWavesUID/custom_role_pile/
 ```
 
 
